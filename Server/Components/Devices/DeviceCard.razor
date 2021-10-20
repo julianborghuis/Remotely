@@ -79,12 +79,6 @@
                     </ButtonContent>
                     <ChildListItems>
                         <li>
-                            <button class="dropdown-item" @onclick="StartChat">
-                                <i class="oi oi-chat" title="Chat"></i>
-                                <span class="ml-2">Chat</span>
-                            </button>
-                        </li>
-                        <li>
                             <button class="dropdown-item" @onclick="() => StartRemoteControl(false)">
                                 <i class="oi oi-laptop" title="Remote Control"></i>
                                 <span class="ml-2">Remote Control</span>
@@ -95,15 +89,6 @@
                                 <i class="oi oi-eye" title="View Only"></i>
                                 <span class="ml-2">View Only</span>
                             </button>
-                        </li>
-                        <li>
-                            <FileInputButton ClassNames="dropdown-item btn btn-primary"
-                                             OnChanged="OnFileInputChanged">
-                                <ButtonContent>
-                                    <i class="oi oi-data-transfer-upload" title="Upload File"></i>
-                                    <span class="ml-2">Upload File</span>
-                                </ButtonContent>
-                            </FileInputButton>
                         </li>
                         <li>
                             <button class="dropdown-item bg-danger" @onclick="UninstallAgent">
@@ -184,13 +169,6 @@
                     </div>
                     <div>
                         <input class="form-control" readonly value="@Device.AgentVersion" />
-                    </div>
-
-                    <div class="font-weight-bold text-info mt-2">
-                        Last Online
-                    </div>
-                    <div>
-                        <input class="form-control" readonly value="@Device.LastOnline" />
                     </div>
 
                     <div class="font-weight-bold text-info mt-2">
