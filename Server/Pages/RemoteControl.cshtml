@@ -1,4 +1,4 @@
-@page
+﻿@page
 @using Remotely.Shared.Models
 @inject Remotely.Server.Services.IApplicationConfig AppConfig
 @model Remotely.Server.Pages.RemoteControlModel
@@ -101,11 +101,11 @@
                 Clipboard  <i class="fas fa-clipboard"></i>
             </button>
 
-            <button id="" hidden="hidden" class="option-button" title="Prevent remote user from using keyboard and mouse.">
+            <button id="blockInputButton" hidden="hidden" class="option-button" title="Prevent remote user from using keyboard and mouse.">
                 Block Remote Input <i class="fas fa-mouse"></i>
             </button>
 
-            <button id="" hidden="hidden" class="option-button" title="Copy a link that lets another person view the remote screen.">
+            <button id="inviteButton" hidden="hidden" class="option-button" title="Copy a link that lets another person view the remote screen.">
                 Invite Others  <i class="fas fa-user-plus"></i>
             </button>
 
